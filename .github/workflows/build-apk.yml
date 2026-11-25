@@ -245,6 +245,7 @@ jobs:
           cp ball_look.kt app/src/main/java/io/github/jackwener/dsh/feature/settings/BallLook.kt
           node patch_fix83.js
           node patch_fix84.js
+          node patch_fix85.js
           node patch_fix82.js
           node patch_fix62.js
           grep -n "val gap = dp" app/src/main/java/io/github/jackwener/dsh/service/FloatingBallService.kt
@@ -289,6 +290,10 @@ jobs:
           grep -c chat-identity app/src/main/java/io/github/jackwener/dsh/feature/conversation/Stream.kt
           grep -c chat-identity app/src/main/java/io/github/jackwener/dsh/feature/settings/SettingsScreen.kt
           grep -c set_preference app/src/main/res/values/strings.xml
+          grep -c chat-look app/src/main/java/io/github/jackwener/dsh/core/data/UiPrefs.kt
+          grep -c chat_look_name app/src/main/res/values/strings.xml
+          grep -c show_stamp app/src/main/java/io/github/jackwener/dsh/core/data/SettingsRepository.kt
+          grep -c showCopy app/src/main/java/io/github/jackwener/dsh/feature/conversation/Stream.kt
           grep -c show_user_avatar app/src/main/java/io/github/jackwener/dsh/core/data/SettingsRepository.kt
           grep -c "browser-live-dot-turn" app/src/main/java/io/github/jackwener/dsh/core/session/SessionStore.kt
           grep -c "notes-export" app/src/main/java/io/github/jackwener/dsh/feature/settings/BackupPage.kt
