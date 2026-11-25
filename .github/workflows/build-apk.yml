@@ -242,6 +242,7 @@ jobs:
           node patch_fix79.js
           node patch_fix80.js
           node patch_fix81.js
+          node patch_fix82.js
           node patch_fix62.js
           grep -n "val gap = dp" app/src/main/java/io/github/jackwener/dsh/service/FloatingBallService.kt
           grep -c "tableComponent" app/src/main/java/io/github/jackwener/dsh/core/designsystem/Content.kt
@@ -268,6 +269,9 @@ jobs:
           grep -c BookmarkStore app/src/main/java/io/github/jackwener/dsh/feature/browser/BrowserPage.kt
           grep -c "browser_tabs" app/src/main/res/values/strings.xml
           grep -c "browser_agent_busy" app/src/main/res/values/strings.xml
+          grep -c stop-hard app/src/main/java/io/github/jackwener/dsh/core/engine/EngineManager.kt
+          grep -c resume-all app/src/main/java/io/github/jackwener/dsh/feature/extensions/ExtensionsScreen.kt
+          grep -c usage-cost-cell app/src/main/java/io/github/jackwener/dsh/feature/settings/UsageSection.kt
           grep -c "fun LiveDot" app/src/main/java/io/github/jackwener/dsh/core/designsystem/Primitives.kt
           grep -c "browser-live-dot" app/src/main/java/io/github/jackwener/dsh/core/capability/CapabilityHub.kt
           grep -c "browser-speed" app/src/main/java/io/github/jackwener/dsh/core/capability/tools/BrowserTools.kt
