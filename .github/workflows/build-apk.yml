@@ -250,6 +250,7 @@ jobs:
           node patch_fix87.js
           node patch_fix88.js
           node patch_fix89.js
+          node patch_fix90.js
           node patch_fix82.js
           node patch_fix62.js
           grep -n "val gap = dp" app/src/main/java/io/github/jackwener/dsh/service/FloatingBallService.kt
@@ -299,7 +300,7 @@ jobs:
           grep -c show_stamp app/src/main/java/io/github/jackwener/dsh/core/data/SettingsRepository.kt
           grep -c showCopy app/src/main/java/io/github/jackwener/dsh/feature/conversation/Stream.kt
           grep -c empty-send app/src/main/java/io/github/jackwener/dsh/core/session/SessionStore.kt
-          grep -c avatar-beside app/src/main/java/io/github/jackwener/dsh/feature/conversation/Stream.kt
+          grep -c avatar-right app/src/main/java/io/github/jackwener/dsh/feature/conversation/Stream.kt
           grep -c chat-avatar-up app/src/main/java/io/github/jackwener/dsh/feature/settings/SettingsScreen.kt
           grep -c safe-quiet app/src/main/java/io/github/jackwener/dsh/core/engine/RestartPolicy.kt
           grep -c safe-quiet app/src/main/java/io/github/jackwener/dsh/core/engine/EngineManager.kt
